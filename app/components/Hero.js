@@ -6,10 +6,10 @@ import { VscArrowDown } from "react-icons/vsc";
 export default function Hero() {
     return (
         <div className="w-full h-screen flex justify-center absolute top-20">
-            <div className="w-5/6 pt-32 flex">
+            <div className="w-5/6 pt-24 flex">
                 {/*Text Section*/}
-                <div className="w-full md:w-2/3">
-                    <p className="text-4xl font-semibold">
+                <div className="w-full md:w-2/3 md:pt-10">
+                    <p className="text-5xl font-semibold">
                         Hi, there<br/>
                         <span className="text-purple">Roshith Krishna</span> here!
                     </p>
