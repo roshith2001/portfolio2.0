@@ -8,7 +8,7 @@ import QuoteBox from "./quoteBox";
 
 export default function Hero() {
     return (
-        <div className="w-full h-screen relative top-20">
+        <div className="w-full relative top-14">
             <div className="hidden md:block">
                 <DotsDesign row={4} col={8} left={0} top={400}/>
             </div>
@@ -16,10 +16,10 @@ export default function Hero() {
                 {/*Text Section*/}
                 <div className="w-full md:w-2/3 md:pt-10 md:flex-shrink">
                     <p className="text-5xl font-semibold">
-                        Hi, there<br/>
+                        Hi, there👋<br/>
                         <span className="text-purple">Roshith Krishna</span> here!
                     </p>
-                    <p className="text-grey mt-12 md:mt-20 mb-12 md:mb-16">
+                    <p className="text-grey mt-12 mb-12">
                         I’m currently into frontend-dev, designing,<br className="hidden md:block"/> Transformers
                     </p>
                     <Button name="Scroll Down" icon={<VscArrowDown />}/>
@@ -29,7 +29,7 @@ export default function Hero() {
                     <Image src={heroImage} alt='hero image' loading="lazy"/>
                     <div className="border border-grey px-2 py-0.5 relative text-center">
                         <div className="inline-block w-3 h-3 absolute left-2 top-2 bg-purple"></div>
-                        <span className="px-2 text-dotgrey">Hey!!! It&apos;s Me</span>
+                        <span className="px-2 text-dotgrey">Hey!!! That&apos;s Me</span>
                     </div>
                 </div>
             </div>
