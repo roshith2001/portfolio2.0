@@ -25,11 +25,11 @@ export default function Hero() {
                     <Button name="Scroll Down" icon={<VscArrowDown />}/>
                 </div>
                 {/*Image Section*/}
-                <div className="pt-5 md:pt-0">
+                <div className="pt-5 md:w-1/3 md:pt-0">
                     <Image src={heroImage} alt='hero image' loading="lazy"/>
                     <div className="border border-grey px-2 py-0.5 relative text-center">
                         <div className="inline-block w-3 h-3 absolute left-2 top-2 bg-purple"></div>
-                        <span className="px-2 text-grey">Hey!!! It&apos;s Me</span>
+                        <span className="px-2 text-dotgrey">Hey!!! It&apos;s Me</span>
                     </div>
                 </div>
             </div>
