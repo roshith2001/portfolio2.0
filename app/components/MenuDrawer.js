@@ -7,7 +7,7 @@ export default function MenuDrawer() {
 
     return (
         <div className={`w-screen h-screen 
-        ${theme=='dark'?'bg-black/90':'bg-white/90'}
+        ${theme=='dark'?'bg-black':'bg-white'}
         z-20 absolute top-0 left-0 flex flex-col pl-14 justify-center gap-12`}>
             <MenuItems />
         </div>

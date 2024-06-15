@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import MenuItems from "./MenuItems";
 import MenuDrawer from "./MenuDrawer";
 import { Turn as Hamburger } from 'hamburger-react'
+import SocialLinks from "./socialLinks";
 
 export default function Topbar(){
     
@@ -19,14 +20,15 @@ export default function Topbar(){
     
     return(
         <div className="fixed flex w-screen py-6 md:pt-14 md:pb-6 items-center backdrop-blur-xl z-10">
+            <SocialLinks />
             <div className="w-4/5 md:min-w-1/2 flex flex-wrap">
-                <span className="font-bold text-sm md:text-xl ml-12 md:ml-32">Roshith Krishna</span>
+                <span className="font-bold text-sm md:text-xl ml-8 md:ml-24">Roshith Krishna</span>
             </div>
             <div className="flex justify-end items-center pl-12 md:px-12">
                 <div className="hidden md:block"><MenuItems/></div>
                 <button 
                     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                    className="border border-purple p-1"
+                    className="border border-purple p-0.5"
                 >
                     {theme === 'light' ? '🌙' : '☀️'}
                 </button>

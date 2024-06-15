@@ -2,13 +2,19 @@ import Image from "next/image";
 import heroImage from '@/public/Hero_Image.png'
 import Button from "./Button";
 import { VscArrowDown } from "react-icons/vsc";
+import DotsDesign from "./dotsDesign";
+import BoxDesign from "./BoxDesign";
+import QuoteBox from "./quoteBox";
 
 export default function Hero() {
     return (
-        <div className="w-full h-screen flex justify-center absolute top-20">
-            <div className="w-5/6 pt-24 flex">
+        <div className="w-full h-screen relative top-20">
+            <div className="hidden md:block">
+                <DotsDesign row={4} col={8} left={0} top={400}/>
+            </div>
+            <div className="w-5/6 pt-24 mx-auto flex flex-wrap md:flex-nowrap">
                 {/*Text Section*/}
-                <div className="w-full md:w-2/3 md:pt-10">
+                <div className="w-full md:w-2/3 md:pt-10 md:flex-shrink">
                     <p className="text-5xl font-semibold">
                         Hi, there<br/>
                         <span className="text-purple">Roshith Krishna</span> here!
@@ -19,14 +25,16 @@ export default function Hero() {
                     <Button name="Scroll Down" icon={<VscArrowDown />}/>
                 </div>
                 {/*Image Section*/}
-                <div className="hidden md:block">
-                    <Image src={heroImage} alt='hero image'/>
+                <div className="pt-5 md:pt-0">
+                    <Image src={heroImage} alt='hero image' loading="lazy"/>
                     <div className="border border-grey px-2 py-0.5 relative text-center">
                         <div className="inline-block w-3 h-3 absolute left-2 top-2 bg-purple"></div>
                         <span className="px-2 text-grey">Hey!!! It&apos;s Me</span>
                     </div>
                 </div>
-            </div>            
+            </div>
+            <QuoteBox /> 
+            <BoxDesign len={30} bre={60} right={0} top={200}/>   
         </div>
     );
 }
