@@ -5,6 +5,9 @@ import { VscArrowDown } from "react-icons/vsc";
 import DotsDesign from "./dotsDesign";
 import BoxDesign from "./BoxDesign";
 import QuoteBox from "./quoteBox";
+import SectionHeader from "./SectionHeader";
+import Section from "./Section";
+import Projects from "./projects";
 
 export default function Hero() {
     return (
@@ -29,12 +32,13 @@ export default function Hero() {
                     <Image src={heroImage} alt='hero image' loading="lazy"/>
                     <div className="border border-grey px-2 py-0.5 relative text-center">
                         <div className="inline-block w-3 h-3 absolute left-2 top-2 bg-purple"></div>
-                        <span className="px-2 text-dotgrey">Hey!!! That&apos;s Me</span>
+                        <span className="px-2 text-grey">Hey!!! That&apos;s Me</span>
                     </div>
                 </div>
             </div>
             <QuoteBox /> 
-            <BoxDesign len={30} bre={60} right={0} top={200}/>   
+            <BoxDesign len={30} bre={60} right={0} top={200}/>
+            <Section header='projects' component={<Projects />}/>   
         </div>
     );
 }
