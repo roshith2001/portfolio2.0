@@ -22,13 +22,13 @@ export default function Hero() {
                         Hi, there👋<br/>
                         <span className="text-purple">Roshith Krishna</span> here!
                     </p>
-                    <p className="text-grey mt-12 mb-12">
-                        I’m currently into frontend-dev, designing,<br className="hidden md:block"/> Transformers
+                    <p className="text-grey my-12">
+                        I’m currently into frontend-dev, designing,<br className="hidden md:block"/> transformers
                     </p>
                     <Button name="Scroll Down" icon={<VscArrowDown />}/>
                 </div>
                 {/*Image Section*/}
-                <div className="pt-5 md:w-1/3 md:pt-0">
+                <div className="pt-5 md:w-1/3 md:pt-0 scale-image">
                     <Image src={heroImage} alt='hero image' loading="lazy"/>
                     <div className="border border-grey px-2 py-0.5 relative text-center">
                         <div className="inline-block w-3 h-3 absolute left-2 top-2 bg-purple"></div>
@@ -37,7 +37,7 @@ export default function Hero() {
                 </div>
             </div>
             <QuoteBox /> 
-            <BoxDesign len={30} bre={60} right={0} top={200}/>
+            <BoxDesign len={30} bre={60} right={0} top={200} animation='box-left-entry'/>
             <Section header='projects' component={<Projects />}/>   
         </div>
     );
