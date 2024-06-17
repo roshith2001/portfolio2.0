@@ -1,8 +1,8 @@
 export default function SectionHeader({header}) {
     return (
-        <div className="">
-            <p className="text-3xl inline-block pr-2"><span className="text-purple text-4xl">#</span>{header}</p>
-            <div className="inline-block w-3/5 h-[1px] bg-purple"></div>
+        <div className="flex items-center">
+            <p className="text-3xl pr-2 font-bold"><span className="font-normal text-purple text-3xl">#</span>{header}</p>
+            <div className="w-2/5 h-[1px] bg-purple"></div>
         </div>
     );
 }

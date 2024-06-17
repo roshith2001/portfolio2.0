@@ -25,11 +25,22 @@ body {
 }
 
 .box-left-entry{
-  animation: left-entry 1s ease-out forwards;
+  transform: translateX(100%);
+  animation: left-entry 1s ease-out 0.5s forwards;
 }
 .scale-image{
   animation: scale-image 1s ease-in-out;
 }
+
+.button{
+  background: linear-gradient(to left, rgb(var(--background-static)) 50%, #C277DA 50%) right;
+  background-size: 200%;
+  transition: .2s ease-out;
+}
+.button:hover {
+  background-position: left;
+}
+
 
 @keyframes comedown {
   from{
@@ -41,10 +52,10 @@ body {
 }
 @keyframes left-entry {
   from {
-    right: -10%;
+    transform: translateX(100%);
   }
   to {
-    right: 0;
+    transform: translateX(0);
   }
 }
 @keyframes scale-image {

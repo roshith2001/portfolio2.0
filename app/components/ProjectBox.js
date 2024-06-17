@@ -1,9 +1,25 @@
 import Image from "next/image";
-export default function ProjectBox({}) {
+import Button from "./Button";
+import { VscArrowBoth, VscGithub } from "react-icons/vsc";
+
+export default function ProjectBox({ name, technologies, image, git, live, description }) {
     return (
-        <div className="w-1/3 border border-grey">
-            <div className="relative w-full h-full">
-                <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqfJ6TaQZ4SozXizNgd_l7hQ3Md_fbvym87g&s' alt='Project Image' layout="fill" style={{objectFit:'cover'}}/>
+        <div className="w-full h-full border border-grey flex flex-col">
+            <div className="relative w-full h-32 p-[1px]">
+                <Image src={image} alt='Project Image' layout="fill" style={{ objectFit: 'cover' }} />
+            </div>
+            <div className="w-full p-2 text-xs border-b border-grey">
+                <p className="flex flex-wrap text-justify">{technologies.map((item, index) => (<span key={index}>{item}&nbsp;</span>))}</p>
+            </div>
+            <div className="p-2 flex flex-col flex-grow">
+                <p className="text-lg pb-1 font-semibold">{name}</p>
+                <p className="text-xs flex-grow">
+                    {description}
+                </p>
+                <div className="flex gap-x-4 pt-2 mt-auto">
+                    <Button name='Live' icon={<VscArrowBoth />} />
+                    <Button name='Github' icon={<VscGithub />} />
+                </div>
             </div>
         </div>
     );
