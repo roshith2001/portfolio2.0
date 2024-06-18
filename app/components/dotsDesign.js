@@ -1,4 +1,4 @@
-export default function DotsDesign({ row, col, left, top }) {
+export default function DotsDesign({ row, col, left, top, right, bottom }) {
 
     // Create an array of row indices
     const rows = Array.from({ length: row }, (_, index) => index);
@@ -6,8 +6,8 @@ export default function DotsDesign({ row, col, left, top }) {
     const cols = Array.from({ length: col }, (_, index) => index);
 
     return (
-        <div className={`items-center absolute`} 
-            style={{left: `${left}px`, top: `${top}px`}}
+        <div className={`items-center absolute -z-40`} 
+            style={{left: `${left}px`, top: `${top}px`, right: `${right}px`, bottom: `${bottom}px`}}
         >
             {rows.map((_, rowIndex) => (
                 <div key={rowIndex} className="inline-block">
