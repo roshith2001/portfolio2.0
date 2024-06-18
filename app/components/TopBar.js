@@ -28,7 +28,6 @@ export default function Topbar(){
                 <div className="hidden md:block"><MenuItems/></div>
                 <button 
                     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                    className=""
                 >
                     {theme === 'light' ? '🌙' : '☀️'}
                 </button>
