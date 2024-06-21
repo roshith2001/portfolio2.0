@@ -48,7 +48,7 @@ const MenuItems = ({ setIsOpen }) => {
         return () => {
             window.removeEventListener('scroll', handleScrollEvent);
         };
-    }, []);
+    }, );
 
     return (
         <>

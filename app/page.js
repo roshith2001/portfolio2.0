@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Section from "./components/Section";
 import Projects from "./components/projects";
 import AboutMe from "./components/AboutMe";
+import ContactMe from "./components/ContactMe";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Topbar />
       <Hero id='home'/>
       <Section id='projects' header='projects' component={<Projects />}/>
-      <Section id='about' header='aboutMe' component={<AboutMe />}/>   
+      <Section id='about' header='aboutMe' component={<AboutMe />}/>
+      <Section id='contact' header='contactMe' component={<ContactMe />}/>
     </main>
   );
 }
