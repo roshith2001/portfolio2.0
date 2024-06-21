@@ -8,7 +8,7 @@ import QuoteBox from "./quoteBox";
 
 export default function Hero({id}) {
     return (
-        <div id={id} className="w-full top-14">
+        <div id={id} className="w-full relative top-14">
             <div className="hidden md:block">
                 <DotsDesign row={4} col={8} left={0} top={400}/>
             </div>
