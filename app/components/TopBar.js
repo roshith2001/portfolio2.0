@@ -29,7 +29,7 @@ export default function Topbar(){
                 <button 
                     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                 >
-                    {theme === 'light' ? '🌑' : '☀️'}
+                    {theme === 'light' ? '🌛' : '🌞'}
                 </button>
                 <div className="md:hidden mx-4 z-50">
                     <Hamburger 
