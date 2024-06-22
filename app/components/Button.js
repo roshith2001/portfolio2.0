@@ -6,9 +6,9 @@ import Link from "next/link";
 const Button = ({name, icon, link, external}) => {
   if(external){
     return (
-      <a href={link || '#'} onClick={(e) => link === '' && e.preventDefault() } target={name=='Resume'?'_blank':'_self'}>
+      <Link href={link || '#'} onClick={(e) => link === '' && e.preventDefault() } target={name=='Resume'?'_blank':'_self'}>
         <RawButton name={name} icon={icon} link={link} external={external}/>
-      </a>
+      </Link>
     );
   }
   return <RawButton name={name} icon={icon} link={link} external={external}/>;

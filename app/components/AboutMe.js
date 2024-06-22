@@ -5,19 +5,20 @@ import Button from "./Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import BoxDesign from "./BoxDesign";
 import Skills from "./Skills";
-import resume from "@/public/resume.pdf"
 
 export default function AboutMe({ id }) {
+    
     return (
         <div id={id}>
             <div className="w-full py-6 flex items-center">
                 <div className="w-full md:w-3/4 md:pr-4">
                     <p className="text-sm pb-6">
-                        Hi, I am Roshith Krishna P.<br /><br />
-                        As a passionate and self-taught web developer, I have honed my skills through countless hours of hands-on experience and continuous learning. My journey into the world of web development began out of sheer curiosity and has transformed into a deep-seated passion. Specializing in both front-end and back-end technologies, I thrive on creating dynamic and responsive websites that offer seamless user experiences.<br /><br />
-                        Over the years, Ive mastered a variety of programming languages and frameworks, including HTML, CSS, JavaScript, and React. My commitment to staying updated with the latest industry trends ensures that my projects are always built with cutting-edge technologies. I take pride in my ability to solve complex problems and deliver robust, scalable solutions that meet clients needs and exceed their expectations.
+                    Hi, I&apos;m Roshith Krishna P, an MSc Computer Science student at St. Joseph&apos;s College (Autonomous) Devagiri, Kozhikode.<br /><br />
+                    I&apos;m passionate about technology, with a focus on web development, particularly front-end technologies like React and NextJS. My current interests also extend to Generative AI, a field I&apos;m actively exploring.<br/><br/>
+                    As a strong believer in community-driven learning, I co-founded <a className="text-purple" href="https://evolvates.org">Evolvates</a>, a student community promoting peer-to-peer and self-learning approaches. I also serve as the COO of this initiative. Additionally, I co-lead the MuLearn Community Chapter at my college.<br/><br/>
+                    I&apos;m currently seeking internship opportunities in web development and software engineering to apply and expand my skills in real-world projects.
                     </p>
-                    <Button name='Resume' icon={<AiOutlineDownload/>} link="public\resume.pdf " external={true}/>
+                    <Button name='Resume' icon={<AiOutlineDownload/>} link="https://drive.google.com/file/d/1XH8JoA5sgXwdUcS8ytx1BFuLO1MpWeif/view?usp=sharing" external={true}/>
                 </div>
                 <div className="hidden md:block w-1/4">
                     <div className="relative">
