@@ -5,7 +5,7 @@ import { VscArrowBoth, VscGithub } from "react-icons/vsc";
 export default function ProjectBox({ name, technologies, image, git, live, description }) {
     return (
         <div className="w-full h-full border border-grey flex flex-col">
-            <div className="relative w-full h-32 p-[1px]">
+            <div className="relative w-full h-48 p-[1px]">
                 <Image src={image} alt='Project Image' layout="fill" style={{ objectFit: 'cover' }} />
             </div>
             <div className="w-full p-2 text-xs border-b border-grey">
