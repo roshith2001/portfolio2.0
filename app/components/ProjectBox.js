@@ -17,8 +17,8 @@ export default function ProjectBox({ name, technologies, image, git, live, descr
                     {description}
                 </p>
                 <div className="flex gap-x-4 pt-2 mt-auto">
-                    <Button name='Live' icon={<VscArrowBoth />} />
-                    <Button name='Github' icon={<VscGithub />} />
+                    <Button name='Live' icon={<VscArrowBoth />} external={true} link={live}/>
+                    <Button name='Github' icon={<VscGithub />} external={true} link={git}/>
                 </div>
             </div>
         </div>

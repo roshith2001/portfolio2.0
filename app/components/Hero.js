@@ -22,7 +22,7 @@ export default function Hero({id}) {
                     <p className="text-grey my-12">
                         I’m currently into frontend-dev, designing,<br className="hidden md:block"/> transformers
                     </p>
-                    <Button name="Scroll Down" icon={<VscArrowDown />}/>
+                    <Button name="Scroll Down" icon={<VscArrowDown />} link='quote' external={false}/>
                 </div>
                 {/*Image Section*/}
                 <div className="pt-5 md:w-1/3 md:pt-0 scale-image">

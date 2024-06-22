@@ -5,6 +5,7 @@ import Button from "./Button";
 import { AiOutlineDownload } from "react-icons/ai";
 import BoxDesign from "./BoxDesign";
 import Skills from "./Skills";
+import resume from "@/public/resume.pdf"
 
 export default function AboutMe({ id }) {
     return (
@@ -16,7 +17,7 @@ export default function AboutMe({ id }) {
                         As a passionate and self-taught web developer, I have honed my skills through countless hours of hands-on experience and continuous learning. My journey into the world of web development began out of sheer curiosity and has transformed into a deep-seated passion. Specializing in both front-end and back-end technologies, I thrive on creating dynamic and responsive websites that offer seamless user experiences.<br /><br />
                         Over the years, Ive mastered a variety of programming languages and frameworks, including HTML, CSS, JavaScript, and React. My commitment to staying updated with the latest industry trends ensures that my projects are always built with cutting-edge technologies. I take pride in my ability to solve complex problems and deliver robust, scalable solutions that meet clients needs and exceed their expectations.
                     </p>
-                    <Button name='Resume' icon={<AiOutlineDownload/>}/>
+                    <Button name='Resume' icon={<AiOutlineDownload/>} link="public\resume.pdf " external={true}/>
                 </div>
                 <div className="hidden md:block w-1/4">
                     <div className="relative">

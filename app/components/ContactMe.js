@@ -7,7 +7,7 @@ export default function ContactMe({ id }) {
             <div className="w-full py-6 flex flex-col md:flex-row items-center">
                 <div className="w-full md:pr-4">
                     <p className="text-sm md:pr-72 mb-6">
-                        If you have other quries or requests or connect with me, don&apos;t hesitate to contact me.
+                    Feel free to reach out if you have any questions or would like to connect.
                     </p>
                 </div>
                 <div className="w-full md:w-1/3 flex-shrink-0">
