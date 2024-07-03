@@ -8,7 +8,7 @@ const contacts = [{
   },
   {
     "text": '9746087500',
-    "link": 'https://wa.me/9746087500?text=Hi,Let_us_connect!',
+    "link": 'https://wa.me/9746087500?text=Hi,Let%20us%20connect!',
     "icon": <FaWhatsapp/>
   },
 ]
