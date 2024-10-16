@@ -17,7 +17,7 @@ export default function Footer() {
                 </div>
             </div>
             <div>
-                <p className="text-[9px] md:text-[12px] text-center text-grey">&copy;Copyright 2024. Made by Roshith Krishna P</p>
+                <p className="text-[9px] md:text-[12px] text-center text-grey">&copy;Copyright 2024. Made with lots of ❤️ by me😉</p>
             </div>
         </div>
     );

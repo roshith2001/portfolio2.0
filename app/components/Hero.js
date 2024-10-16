@@ -8,7 +8,7 @@ import QuoteBox from "./quoteBox";
 
 export default function Hero({id}) {
     return (
-        <div id={id} className="w-full relative top-14">
+        <div id={id} className="w-full relative top-14 pb-10">
             <div className="hidden md:block">
                 <DotsDesign row={4} col={8} left={0} top={400}/>
             </div>
@@ -20,7 +20,7 @@ export default function Hero({id}) {
                         <span className="text-purple">Roshith Krishna</span> here!
                     </p>
                     <p className="text-grey my-12">
-                        I’m currently into frontend-dev, designing,<br className="hidden md:block"/> transformers
+                        I’m currently into frontend-dev, designing and community building.<br /><br/>
                     </p>
                     <Button name="Scroll Down" icon={<VscArrowDown />} link='quote' external={false}/>
                 </div>
@@ -28,8 +28,8 @@ export default function Hero({id}) {
                 <div className="pt-5 md:w-1/3 md:pt-0 scale-image">
                     <Image src={heroImage} alt='hero image' loading="lazy"/>
                     <div className="border border-grey px-2 py-0.5 relative text-center">
-                        <div className="inline-block w-3 h-3 absolute left-2 top-2 bg-purple"></div>
-                        <span className="px-2 text-grey">Hey!!! That&apos;s Me👆</span>
+                        
+                        <span className="px-1 text-grey">Me being a delegate at HPAIR ACONF’24 Bangkok</span>
                     </div>
                 </div>
             </div>
