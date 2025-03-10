@@ -6,6 +6,10 @@ import tailwindImg from '@/public/tailwind.png'
 import cssImg from '@/public/css.svg'
 import fireBaseImg from '@/public/firebase.svg'
 import figmaImg from '@/public/figma.png'
+import github from '@/public/github.webp'
+import nodejs from '@/public/nodejs.webp'
+import python from '@/public/python.png'
+import mongodb from '@/public/mongodb.webp'
 
 const skillList = [{
     "name":"JavaScript",
@@ -38,5 +42,21 @@ const skillList = [{
 {
     "name":"Figma",
     "icon": figmaImg
+},
+{
+    "name":"GitHub",
+    "icon": github
+},
+{
+    "name":"NodeJS",
+    "icon": nodejs
+},
+{
+    "name":"Python",
+    "icon": python
+},
+{
+    "name":"MongoDB",
+    "icon": mongodb
 }]
 export default skillList;

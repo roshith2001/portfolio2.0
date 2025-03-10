@@ -19,7 +19,7 @@ export default function Topbar(){
     if(!mounted) return null;
     
     return(
-        <div className="fixed flex w-screen py-6 md:pt-14 md:pb-6 items-center backdrop-blur-xl z-10">
+        <div className="fixed pull-down flex w-screen py-6 md:pt-14 md:pb-6 items-center backdrop-blur-xl z-10">
             <SocialLinks />
             <div className="w-4/5 md:min-w-1/2 flex flex-wrap">
                 <span className="font-bold text-sm md:text-xl ml-8 md:ml-24">Roshith Krishna</span>

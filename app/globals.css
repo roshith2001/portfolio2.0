@@ -29,9 +29,14 @@ body {
   transform: translateX(100%);
   animation: left-entry 1s ease-out 0.5s forwards;
 }
-.scale-image{
-  animation: scale-image 1s ease-in-out;
+
+.box-right-entry{
+  transform: translateX(-100%);
+  animation: right-entry 1s ease-out 0.5s forwards;
 }
+/* .scale-image{
+  animation: left-entry 1s ease-in-out;
+} */
 
 .button{
   background: linear-gradient(to left, rgb(var(--background-static)) 50%, #C277DA 50%) right;
@@ -40,6 +45,43 @@ body {
 }
 .button:hover {
   background-position: left;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline;
+  width: 0;
+  animation: typing 1s steps(22) forwards;
+  animation-delay: 0.5s !important;
+}
+
+.typewriter2 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1s steps(22) forwards;
+}
+.typewriter3 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1s steps(22) forwards;
+  animation-delay: 1s !important;
+}
+
+.text-purple {
+  color: purple;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 
@@ -54,6 +96,14 @@ body {
 @keyframes left-entry {
   from {
     transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes right-entry {
+  from {
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0);

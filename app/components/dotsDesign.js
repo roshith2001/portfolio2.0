@@ -1,4 +1,4 @@
-export default function DotsDesign({ row, col, left, top, right, bottom }) {
+export default function DotsDesign({ row, col, left, top, right, bottom, animation }) {
 
     // Create an array of row indices
     const rows = Array.from({ length: row }, (_, index) => index);
@@ -6,7 +6,7 @@ export default function DotsDesign({ row, col, left, top, right, bottom }) {
     const cols = Array.from({ length: col }, (_, index) => index);
 
     return (
-        <div className={`items-center absolute -z-40`} 
+        <div className={`items-center absolute -z-40 ${animation}`} 
             style={{left: `${left}px`, top: `${top}px`, right: `${right}px`, bottom: `${bottom}px`}}
         >
             {rows.map((_, rowIndex) => (

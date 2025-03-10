@@ -10,19 +10,20 @@ export default function Hero({id}) {
     return (
         <div id={id} className="w-full relative top-14 pb-10">
             <div className="hidden md:block">
-                <DotsDesign row={4} col={8} left={0} top={400}/>
+                <DotsDesign row={4} col={8} left={0} top={400} animation= 'box-right-entry'/>
             </div>
             <div className="w-5/6 pt-24 mx-auto flex flex-wrap md:flex-nowrap">
                 {/*Text Section*/}
                 <div className="w-full md:w-2/3 md:pt-10 md:flex-shrink">
-                    <p className="text-5xl font-semibold">
-                        Hi, there<br/>
-                        <span className="text-purple">Roshith Krishna</span> here!
+                    <p className="text-5xl flex flex-col font-semibold">
+                       <span className="typewriter2"> Hi, there</span>
+                        <span className="text-purple typewriter">Roshith Krishna</span> 
+                        <span className="typewriter3">here!</span>
                     </p>
                     <p className="text-grey my-12">
                         I’m currently into frontend-dev, designing and community building.<br /><br/>
                     </p>
-                    <Button name="Scroll Down" icon={<VscArrowDown />} link='quote' external={false}/>
+                    <Button name="Scroll Down" icon={<VscArrowDown />} link='quote' external={false} animation='pull-down'/>
                 </div>
                 {/*Image Section*/}
                 <div className="pt-5 md:w-1/3 md:pt-0 scale-image">

@@ -16,9 +16,9 @@ export default function AboutMe({ id }) {
                     Hi, I&apos;m Roshith Krishna P, an MSc Computer Science student at St. Joseph&apos;s College (Autonomous) Devagiri, Kozhikode.<br /><br />
                     I&apos;m passionate about technology, with a focus on web development, particularly front-end technologies like React and NextJS. My current interests also extend to Generative AI, a field I&apos;m actively exploring.<br/><br/>
                     As a strong believer in community-driven learning, I co-founded <a className="text-purple" href="https://evolvates.org">Evolvates</a>, a student community promoting peer-to-peer and self-learning approaches. I also serve as the Advisor of this initiative. Additionally, I Lead the <a className="text-purple" href="https://www.tinkerhub.org/campus/2914/St.%20Joseph's%20College%20Devagiri">Tinkerhub</a> Community at <a className="text-purple" href="https://devagiricollege.org">St.Joseph&apos;s College, Devagiri</a>.<br/><br/>
-                    I&apos;m currently seeking internship opportunities in web development and software engineering to apply and expand my skills in real-world projects.
+                    In recognition of my leadership and engagement in global discussions, I was selected as a <span className="text-purple">Delegate for the HPAIR Asia Conference 2024 in Bangkok</span>, where I had the opportunity to collaborate with international leaders, entrepreneurs, and academics on pressing global issues.<br /><br />
                     </p>
-                    <Button name='Resume' icon={<AiOutlineDownload/>} link="https://drive.google.com/file/d/1XH8JoA5sgXwdUcS8ytx1BFuLO1MpWeif/view?usp=sharing" external={true}/>
+                    <Button name='Resume' icon={<AiOutlineDownload/>} link="https://roshith.tiiny.site/" external={true}/>
                 </div>
                 <div className="hidden md:block w-1/4">
                     <div className="relative">
