@@ -10,6 +10,7 @@ import github from '@/public/github.webp'
 import nodejs from '@/public/nodejs.webp'
 import python from '@/public/python.png'
 import mongodb from '@/public/mongodb.webp'
+import langgraph from '@/public/langgraph.png'
 
 const skillList = [{
     "name":"JavaScript",
@@ -22,6 +23,10 @@ const skillList = [{
 {
     "name":"ReactJS",
     "icon": reactImg
+},
+{
+    "name":"LangGraph",
+    "icon": langgraph
 },
 {
     "name":"Tailwind",
