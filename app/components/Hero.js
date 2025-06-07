@@ -21,7 +21,7 @@ export default function Hero({id}) {
                         <span className="typewriter3">here!</span>
                     </p>
                     <p className="text-grey my-12">
-                        I’m currently into frontend-dev, designing and community building.<br /><br/>
+                        I’m currently into Full Stack-dev, Agentic AI and Community Building.<br /><br/>
                     </p>
                     <Button name="Scroll Down" icon={<VscArrowDown />} link='quote' external={false} animation='pull-down'/>
                 </div>
