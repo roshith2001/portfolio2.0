@@ -7,7 +7,7 @@ export default function MenuDrawer({setIsOpen}) {
 
     return (
         <div className={`w-screen h-screen 
-        ${theme=='dark'?'bg-black/95':'bg-white/95'}
+        ${theme=='dark'?'bg-black':'bg-white'}
         z-20 absolute top-0 left-0 flex flex-col pl-14 justify-center gap-12`}>
             <MenuItems setIsOpen={setIsOpen}/>
         </div>
