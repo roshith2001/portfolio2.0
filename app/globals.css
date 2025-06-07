@@ -49,7 +49,7 @@ body {
 
 .typewriter {
   overflow: hidden;
-  white-space: nowrap;
+  white-space: wrap;
   display: inline;
   width: 0;
   animation: typing 1s steps(22) forwards;
