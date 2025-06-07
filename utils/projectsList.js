@@ -18,7 +18,7 @@ const projects = [
     "imageLink": questionAi,
     "githubLink": "https://github.com/roshith2001/questionAI",
     "liveDemoLink": "https://syllabus-spark-questions.lovable.app/",
-    "description": "Custom dashboard for St. Joseph's College placement cell. Connects staff with students via mobile app, streamlining recruitment. Built with NextJS and Firebase."
+    "description": "An AI-powered Question Bank Generator that auto-creates categorized questions from syllabus and study material, tagged with Bloom&apos;s Taxonomy levels and weightages."
   },
   {
     "name": "Placify Dashboard",
