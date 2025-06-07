@@ -1,7 +1,7 @@
 import placifyImage from '@/public/placify-img.png'; 
 import fireChatImage from '@/public/fire-chat-img.png'; 
 import whiteBoardImage from '@/public/whiteboard-img.png'; 
-import questionAi from '@/public/question_ai .png';
+import questionAi from '@/public/question_ai.png';
 const projects = [
   {
     "name": "Smart Question Bank Generator",
